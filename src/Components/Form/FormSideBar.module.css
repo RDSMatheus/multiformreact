@@ -1,0 +1,49 @@
+.sideBar{
+  width: 274px;
+  height: 568px;
+  background: url("../../assets/images/bg-sidebar-desktop.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.sideBar ul{
+  list-style: none;
+  text-transform: uppercase;
+  margin: 30px;
+}
+
+.sideBar li{
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+
+.sideBar div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  grid-row: 1 / -1;
+  margin-right: 20px;
+  width: 38px;
+  height: 38px;
+  color: #fff;
+} 
+
+.sideBar span{
+  color:hsl(231, 11%, 63%);
+  font-size: .75rem;
+}
+
+.sideBar p{
+  color: #fff;
+  font-weight: 600;
+}
+
+.sideBar div.activeCount {
+  background-color: hsl(206, 94%, 87%);
+  color: hsl(213, 96%, 18%);
+}

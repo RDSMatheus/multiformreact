@@ -1,0 +1,11 @@
+.container{
+  display: grid;  
+  background: #eee; 
+  place-self: center;
+  grid-template-columns: 1fr 2fr;
+  padding: 1rem;
+  gap: 100px;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .2);
+}

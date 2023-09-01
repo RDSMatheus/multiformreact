@@ -1,0 +1,16 @@
+.label{
+  display: block;
+  margin-bottom: .5rem;
+  color: hsl(213, 96%, 18%);
+}
+
+.input{
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  padding: .875rem;
+  border-radius: .875rem;
+  border: solid 1px hsl(231, 11%, 63%);
+  font-weight: 700;
+  color: hsl(213, 96%, 18%);
+}

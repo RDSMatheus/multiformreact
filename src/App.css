@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+  --font-1: 'Ubuntu', sans-serif;
+}
+
+body{
+  font-family: var(--font-1);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: hsl(206, 94%, 87%);
+}
