@@ -43,8 +43,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://multiformreact.vercel.app/](https://multiformreact.vercel.app/)
 
 ### Built with
 
@@ -82,5 +81,3 @@ I aspire to master React, delve into Next.js for efficient web app development, 
 - LinkedIn - [Matheus Ramos](www.linkedin.com/in/matheus-r-d-s)
 - Frontend Mentor - [@RDSMatheus](https://www.frontendmentor.io/profile/RDSMatheus)
 - github - [@rdsmatheus](https://github.com/RDSMatheus)
-
-
