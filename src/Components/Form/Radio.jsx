@@ -10,7 +10,7 @@ const Radio = ({ monthly, options, value, setValue }) => {
         <label
           key={option.plan}
           className={`${styles.label} ${
-            option.plan === value ? styles.labelActive : ''
+            option.plan === value.plan ? styles.labelActive : ''
           }`}
         >
           <img src={option.icon} alt={option.plan} />
@@ -19,8 +19,8 @@ const Radio = ({ monthly, options, value, setValue }) => {
             type="radio"
             id={option.plan}
             value={option.plan}
-            checked={option.plan === value}
-            onChange={(event) => setValue(event.target.value)}
+            checked={option.plan === value.plan}
+            onChange={() => setValue(option)}
           />
           {option.plan}
           <span>{option.price}</span>
@@ -32,4 +32,3 @@ const Radio = ({ monthly, options, value, setValue }) => {
 };
 
 export default Radio;
-

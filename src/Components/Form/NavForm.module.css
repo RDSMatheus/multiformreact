@@ -33,3 +33,23 @@
 .proximo:is(:hover, :focus){
   background: hsl(243, 100%, 62%);
 }
+
+.confirm {
+  padding: .875rem 1.25rem;
+  background: hsl(243, 100%, 62%);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .container{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    padding: .8rem;
+  }
+}

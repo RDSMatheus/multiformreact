@@ -1,56 +1,102 @@
-.container{
-  background-color: hsl(229, 24%, 87%);
-  padding: .875rem;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.label {
-  display: flex;
+.label{
+  display: grid;
+  grid-template-columns: max-content 1fr auto;
+  gap: 30px;
   align-items: center;
-  gap: 20px;
-  color: hsl(231, 11%, 63%);
-  font-weight: 700;
-}
-
-.switch{
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 26px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
+  margin-bottom: .8rem;
+  padding: 1rem;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 10px;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: hsl(213, 96%, 18%);
-  transition: .4s;
-  border-radius: 34px;
+  transition: .3s;
 }
 
-.slider:before {
+.label h2{
+  font-size: 1.2rem;
+  margin-bottom: .875rem;
+  color: hsl(213, 96%, 18%);
+}
+
+.label p{
+  color: hsl(231, 11%, 63%);
+}
+
+.label.active{
+  border-color:  hsl(243, 100%, 62%);
+  background-color: hsl(231, 100%, 99%);
+}
+
+.checkbox{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox input{
   position: absolute;
-  content: "";
-  height: 18px;
-  width: 18px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: .4s;
-  border-radius: 34px;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 
-input:checked + .slider:before {
-  transform: translateX(14px);
+.checkmark {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: hsl(231, 100%, 99%);
+  border-radius: 6px;
+  border: 1px solid hsl(229, 24%, 87%);
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: hsl(243, 100%, 62%);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  left: 9px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.price {
+  color: hsl(243, 100%, 62%); 
+}
+
+@media (max-width: 900px) {
+  .label{
+    gap: 10px;
+    padding: .8rem;
+  }
+  .label h2{
+    font-size: 1rem;
+  }
+  .label p,.price {
+    font-size: .8rem;
+  }
 }

@@ -48,3 +48,30 @@
   background-color: hsl(206, 94%, 87%);
   color: hsl(213, 96%, 18%);
 }
+
+@media (max-width: 900px) {
+  .sideBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: url("../../assets/images/bg-sidebar-mobile.svg");
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+  .sideBar ul{
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: center;
+  }
+
+  .sideBar li{
+    display: inline-block;
+    margin: 0;
+  }
+
+
+  .sideBar span, .sideBar p{
+    display: none;
+  }
+}

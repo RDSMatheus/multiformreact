@@ -4,8 +4,18 @@
   place-self: center;
   grid-template-columns: 1fr 2fr;
   padding: 1rem;
-  gap: 100px;
   align-items: center;
   border-radius: 1rem;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .2);
+}
+
+@media (max-width: 900px) {
+  .container{
+    grid-template-columns: 1fr;
+    place-self: initial;
+    margin: 0 10px;
+    position: relative;
+    padding: 0;
+    background: none;
+  }
 }

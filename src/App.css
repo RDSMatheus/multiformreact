@@ -12,6 +12,7 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 img{
@@ -25,4 +26,11 @@ img{
   display: grid;
   place-items: center;
   background: hsl(206, 94%, 87%);
+}
+
+@media (max-width: 900px) {
+  .container{
+    place-items: initial;
+    align-items: start;
+  }
 }

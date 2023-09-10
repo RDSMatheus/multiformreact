@@ -2,6 +2,7 @@
   display: block;
   margin-bottom: .5rem;
   color: hsl(213, 96%, 18%);
+  
 }
 
 .input{
@@ -13,4 +14,22 @@
   border: solid 1px hsl(231, 11%, 63%);
   font-weight: 700;
   color: hsl(213, 96%, 18%);
+  outline: none;
+}
+
+.input.inputError{
+  border-color: red;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.error {
+  font-size: 1rem;
+  color: red;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
 }

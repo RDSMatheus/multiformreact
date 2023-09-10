@@ -1,0 +1,54 @@
+.container{
+  background-color: hsl(229, 24%, 87%);
+  border-radius: 10px;
+  padding: 1rem;
+  color: hsl(231, 11%, 63%);
+}
+
+.summaryHeader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(231, 11%, 63%);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+:is(.summaryHeader p, .summaryHeader span){
+  text-transform: capitalize;
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.summaryHeader button{
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  text-decoration: underline;
+  color: hsl(231, 11%, 63%);
+  cursor: pointer;
+}
+
+.addOnList{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+
+.addOnList span{
+  color: hsl(213, 96%, 18%);
+}
+
+.total{
+  color: hsl(231, 11%, 63%);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.total span{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(213, 96%, 18%);
+}
